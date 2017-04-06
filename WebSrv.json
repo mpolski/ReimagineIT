@@ -6,5 +6,5 @@
 "serverHardwareTypeUri": "/rest/server-hardware-types/8761242E-2519-446A-8ACE-5BA01A016FEF",
 "enclosureGroupUri":"/rest/enclosure-groups/9399bf3b-1b78-43a8-aa48-c60d2bba2946",
 "enclosureUri": "/rest/enclosures/0000000000A66101",
-"enclosureBay": 5,
+"enclosureBay": 5
 }
