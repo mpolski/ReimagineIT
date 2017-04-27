@@ -10,9 +10,6 @@ URL="https://$SERVER"
 
 EXTPROFNAME=`cat "$JSONFILE" | jq -r .name`
 
-
-#AUTH=`curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -d '{"userName":"'$USER'","password":"'$PASS'","loginMsgAck":"true"}' POST $URL/rest/login-sessions | jq -r .sessionID`
-
 echo $SERVER $USER $PASS $JSONFILE
 echo " "
 echo $AUTH
