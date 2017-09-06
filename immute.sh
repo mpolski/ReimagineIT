@@ -19,8 +19,8 @@ SPNAME=`curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -
 #if no, logs information
 if [ "$SPNAME" == "$EXTPROFNAME" ]; 
  then
-   echo "Profile $EXTPROFNAME exists!"
-#   echo "`./removeServProf.sh $SERVER $USER $PASS $PROFILE $AUTH`";
+   echo "Profile $EXTPROFNAME exists! Destroying $EXTPROFNAME......."
+   echo "`./removeServProf.sh $SERVER $USER $PASS $PROFILE $AUTH`";
    echo "`sleep 85`"
  else
    echo "Nothing to destroy, provisioning infrastructure";
