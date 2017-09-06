@@ -20,7 +20,7 @@ SPNAME=`curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -
 if [ "$SPNAME" == "$EXTPROFNAME" ]; 
  then
    echo "Profile $EXTPROFNAME exists!"
-   echo "`./removeServProf.sh $SERVER $USER $PASS $PROFILE $AUTH`";
+#   echo "`./removeServProf.sh $SERVER $USER $PASS $PROFILE $AUTH`";
    echo "`sleep 85`"
  else
    echo "Nothing to destroy, provisioning infrastructure";
