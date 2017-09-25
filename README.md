@@ -1,1 +1,1 @@
-# ReimagineIT
+# ReimagineIT & GuruClub
