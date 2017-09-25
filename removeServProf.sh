@@ -10,9 +10,9 @@ URL="https://$SERVER"
 
 EXTPROFNAME=`cat "$JSONFILE" | jq -r .name`
 
-#echo $SERVER $USER $PASS $JSONFILE
+echo $SERVER $USER $PASS $JSONFILE
 echo " "
-#echo $AUTH
+echo $AUTH
 echo ""
-echo "Destroying server "$EXTPROFNAME
+echo "Removing profile "$EXTPROFNAME
 curl -s -k -H "X-API-Version: 300" -H "Content-Type: application/json" -H "Auth: $AUTH" -X DELETE $URL/rest/server-profiles?filter=name="'$EXTPROFNAME'"
