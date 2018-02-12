@@ -1,13 +1,12 @@
 {
 "type":"ServerProfileV6",
 "name":"WebScale-01",
-"description":"TypeB - Compute with OS Disk & Single Connection",
+"description":"TypeC - Storage Node w/ OS Disk, Data Disks, Single Connection",
 "serverHardwareUri": "/rest/server-hardware/30303437-3034-4D32-3230-313130304752",
 "serverHardwareTypeUri": "/rest/server-hardware-types/8761242E-2519-446A-8ACE-5BA01A016FEF",
 "enclosureGroupUri":"/rest/enclosure-groups/9399bf3b-1b78-43a8-aa48-c60d2bba2946",
 "enclosureUri": "/rest/enclosures/0000000000A66101",
 "enclosureBay": 5,
-
 
 "connections": [
   {
@@ -23,6 +22,18 @@
 
             "localStorage":
             {
+                "sasLogicalJBODs":
+                [
+                    {
+                        "id": 1,
+                        "deviceSlot": "Mezz 1",
+                        "name": "Data Disk 4x2TBR5",
+                        "numPhysicalDrives": 4,
+                        "driveMinSizeGB": 2048,
+                        "driveMaxSizeGB": 2048,
+                        "driveTechnology": "SataHdd"
+                    }
+                ],
                 "controllers":
                 [
                     {
@@ -39,6 +50,23 @@
                                 "numPhysicalDrives": 2,
                                 "driveTechnology": null,
                                 "sasLogicalJBODId": null
+                            }
+                        ]
+                    },
+                    {
+                        "deviceSlot": "Mezz 1",
+                        "mode": "RAID",
+                        "initialize": false,
+                        "importConfiguration": false,
+                        "logicalDrives":
+                        [
+                            {
+                                "name": null,
+                                "raidLevel": "RAID5",
+                                "bootable": false,
+                                "numPhysicalDrives": null,
+                                "driveTechnology": null,
+                                "sasLogicalJBODId": 1
                             }
                         ]
                     }
