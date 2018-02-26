@@ -1,1 +1,1 @@
-# Hello DevOpsDays Warsaw 2017!!!
+# Infrastructure as Code demo using HPE Synergy
